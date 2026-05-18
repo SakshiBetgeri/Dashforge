@@ -1,0 +1,10 @@
+# Netlify configuration for InsightIQ
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Handles SPA routing for client-side navigation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
